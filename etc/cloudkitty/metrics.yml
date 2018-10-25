@@ -24,25 +24,25 @@
 
   services_metrics:
     compute:
-      - vcpus: max
-      - memory: max
-      - cpu: max
-      - disk.root.size: max
-      - disk.ephemeral.size: max
+      - vcpus: mean
+      - memory: mean
+      - cpu: mean
+      - disk.root.size: mean
+      - disk.ephemeral.size: mean
     volume:
-      - volume.size: max
+      - volume.size: mean
     network.bw.in:
-      - network.incoming.bytes: max
+      - network.incoming.bytes: mean
     network.bw.out:
-      - network.outgoing.bytes: max
+      - network.outgoing.bytes: mean
     network.floating:
-      - ip.floating: max
+      - ip.floating: mean
     image:
-      - image.size: max
-      - image.download: max
-      - image.serve: max
+      - image.size: mean
+      - image.download: mean
+      - image.serve: mean
     radosgw.usage:
-      - radosgw.objects.size: max
+      - radosgw.objects.size: mean
 
   metrics_units:
     compute:
