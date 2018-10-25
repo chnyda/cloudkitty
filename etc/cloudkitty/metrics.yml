@@ -29,6 +29,7 @@ metrics:
 
   volume.size:
     unit: GiB
+    alt_name: volume
     groupby:
       - id
       - project_id
